@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #cfecd0, #ffc5ca);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0em;
+}
+
+ul li, ul li ul li {
+    position:relative;
+    top:0;
+    bottom:0;
+    padding-bottom: 7px;
+}
+
+ul li ul {
+    margin-left: 4em;
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    padding:0 0 0 10px;
+    position: relative;
+    top:1em;
+}
+
+li a:hover {
+    text-decoration: none;
+}
+
+a.addBorderBefore:before {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 37px;
+    position: absolute;
+    left: -59px;
+    top: -25px;
+    border-left: 1px solid gray;
+}
+
+li:before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 0;
+    position: relative;
+    left: 0em;
+    top:1em;
+    border-top: 1px solid gray;
+}
+
+ul li ul li:last-child:after, ul li:last-child:after {
+    content: '';
+    display: block;
+    width: 1em;
+    height: 1em;
+    position: relative;
+    background: #fff;
+    top: 9px;
+    left: -1px;
+}
+
+#form-get-links{
+    margin-top: 50px;
+}
+
+li:after{
+    opacity: 0;
+}
+
+ul li ul li ul li ul li p{
+    margin-left: 30px;
+    color: #428bca;
+    margin-top: -15px;
+    max-width: 500px;
+    word-wrap: break-word;
+}
+
+.content, .link-title{
+    margin-top: 0;
+}
+
+ul li ul li ul li ul li p a{
+    max-width: 500px;
+    word-wrap: break-word;
+    display: inline;
+    padding: 0 ;
+    margin: 0;
+}
+
+
